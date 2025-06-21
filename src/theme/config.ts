@@ -1,6 +1,13 @@
 import {TextStyle} from 'react-native';
 import {moderateScale, scaledSize} from '@/theme/metrics';
 
+export enum FONT_FAMILY {
+  Poppins_regular = 'Poppins-Regular',
+  Poppins_medium = 'Poppins-Medium',
+  Poppins_semibold = 'Poppins-SemiBold',
+  Poppins_bold = 'Poppins-Bold',
+}
+
 const metricSizes = {
   '1': moderateScale(1),
   '1.5': moderateScale(1.5),

@@ -3,6 +3,7 @@ export enum Images {
   BANNER = require('@/assets/images/banner.png'),
   SHOW1 = require('@/assets/images/show1.png'),
   SHOW2 = require('@/assets/images/show2.png'),
+  SHOWTIME = require('@/assets/images/show_time.png'),
   MAP = require('@/assets/images/categories/map.png'),
   INHABITANTS = require('@/assets/images/categories/inhabitants.png'),
   SHOWS = require('@/assets/images/categories/shows.png'),

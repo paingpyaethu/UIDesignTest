@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Image, ScrollView, StyleSheet} from 'react-native';
-import {Categories, Tickets} from '@/components/molecules';
+import {Categories, Tickets, UpcomingShows} from '@/components/molecules';
 import {colors, config, Images} from '@/theme';
 
 const HomeScreen = () => {
@@ -19,6 +19,9 @@ const HomeScreen = () => {
 
         {/* Tickets Section */}
         <Tickets />
+
+        {/* Upcoming Shows Section */}
+        <UpcomingShows />
       </ScrollView>
     </View>
   );

@@ -16,4 +16,26 @@ const categories: CategoryType[] = [
   {id: '6', label: 'Meet & Greets', image: Images.MEET_AND_GREETS},
 ];
 
-export {categories};
+export type UpcomingShowType = {
+  id: string;
+  time: string;
+  title: string;
+  image: ImageSourcePropType | undefined;
+};
+
+const upcomingShows: UpcomingShowType[] = [
+  {
+    id: '1',
+    time: '2:30 PM',
+    title: 'Dive Feeding @ Shipwreck',
+    image: Images.SHOW1,
+  },
+  {
+    id: '2',
+    time: '2:40 PM',
+    title: 'Say Cheese Shark',
+    image: Images.SHOW2,
+  },
+];
+
+export {categories, upcomingShows};

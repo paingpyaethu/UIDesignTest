@@ -1,4 +1,4 @@
-import {BANNER_IMAGES} from '@/constants/dummy';
+import {BANNER_IMAGES, DETAIL_BANNER_IMAGES} from '@/constants/dummy';
 import {config} from '@/theme';
 import React, {memo, useMemo} from 'react';
 import {
@@ -16,14 +16,24 @@ interface SlideItemProps extends AnimatedProps<ViewProps> {
   index?: number;
   rounded?: boolean;
   source?: ImageSourcePropType;
+  detailBanner?: boolean;
 }
 
 const SlideItem = (props: SlideItemProps) => {
-  const {style, index = 0, rounded = false, ...animatedViewProps} = props;
+  const {
+    style,
+    index = 0,
+    rounded = false,
+    detailBanner = false,
+    ...animatedViewProps
+  } = props;
 
   const source = useMemo(
-    () => props.source || BANNER_IMAGES[index % BANNER_IMAGES.length],
-    [index, props.source],
+    () =>
+      props.source || detailBanner
+        ? DETAIL_BANNER_IMAGES[index % DETAIL_BANNER_IMAGES.length]
+        : BANNER_IMAGES[index % BANNER_IMAGES.length],
+    [index, props.source, detailBanner],
   );
 
   return (

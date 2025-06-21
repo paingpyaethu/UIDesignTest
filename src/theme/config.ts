@@ -44,6 +44,7 @@ const metricSizes = {
   '180': scaledSize(180),
   '200': scaledSize(200),
   '220': scaledSize(220),
+  '240': scaledSize(240),
 };
 
 const shadows = {
@@ -117,6 +118,10 @@ const themeFontStyles = {
   fs_20: {
     fontSize: metricSizes[20],
     lineHeight: metricSizes[28],
+  } as TextStyle,
+  fs_24: {
+    fontSize: metricSizes[24],
+    lineHeight: metricSizes[30],
   } as TextStyle,
 };
 

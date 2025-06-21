@@ -7,12 +7,13 @@ import {
   HomeHeader,
 } from '@/components/molecules';
 import {AnimatedListItemView} from '@/components/atoms';
+import {BANNER_IMAGES} from '@/constants/dummy';
 
 const HomeScreenItemWrapper = () => {
   return (
     <AnimatedListItemView>
       <HomeHeader />
-      <ImageCarousel />
+      <ImageCarousel data={BANNER_IMAGES} />
       <Categories />
       <Tickets />
       <UpcomingShows />

@@ -19,7 +19,16 @@ const SafeScreen = ({
     backgroundColor: colors.white,
   };
 
-  return <View style={[$containerStyle, containerStyle]}>{children}</View>;
+  return (
+    <View style={[$containerStyle, containerStyle]}>
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle={'dark-content'}
+      />
+      {children}
+    </View>
+  );
 };
 
 export default SafeScreen;

@@ -4,6 +4,9 @@ export enum Images {
   BANNER = require('@/assets/images/banner/banner.png'),
   BANNERONE = require('@/assets/images/banner/banner_one.png'),
   BANNERTWO = require('@/assets/images/banner/banner_two.png'),
+  DETAIL_BANNER = require('@/assets/images/banner/detail_banner.png'),
+  DETAIL_BANNER_ONE = require('@/assets/images/banner/detail_banner_one.png'),
+  DETAIL_BANNER_TWO = require('@/assets/images/banner/detail_banner_two.png'),
   SHOW1 = require('@/assets/images/show1.png'),
   SHOW2 = require('@/assets/images/show2.png'),
   SHOWTIME = require('@/assets/images/show_time.png'),
@@ -18,4 +21,6 @@ export enum Images {
   HOME = require('@/assets/images/bottomtab/home.png'),
   WALLET = require('@/assets/images/bottomtab/wallet.png'),
   MORE = require('@/assets/images/bottomtab/more.png'),
+  CROSS = require('@/assets/images/cross.png'),
+  MAPPIN = require('@/assets/images/map_pin.png'),
 }

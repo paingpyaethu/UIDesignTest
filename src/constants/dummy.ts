@@ -2,6 +2,11 @@ import {Images} from '@/theme';
 import {ImageSourcePropType} from 'react-native';
 
 const BANNER_IMAGES = [Images.BANNER, Images.BANNERONE, Images.BANNERTWO];
+const DETAIL_BANNER_IMAGES = [
+  Images.DETAIL_BANNER,
+  Images.DETAIL_BANNER_ONE,
+  Images.DETAIL_BANNER_TWO,
+];
 
 export type CategoryType = {
   id: string;
@@ -40,4 +45,4 @@ const upcomingShows: UpcomingShowType[] = [
   },
 ];
 
-export {BANNER_IMAGES, categories, upcomingShows};
+export {BANNER_IMAGES, DETAIL_BANNER_IMAGES, categories, upcomingShows};

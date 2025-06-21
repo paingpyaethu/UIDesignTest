@@ -11,6 +11,7 @@ import Animated, {
   Easing,
   withDelay,
 } from 'react-native-reanimated';
+import {useNavigation} from '@react-navigation/native';
 
 const UpcomingShowItem = ({
   item,
@@ -19,6 +20,8 @@ const UpcomingShowItem = ({
   item: (typeof upcomingShows)[0];
   index: number;
 }) => {
+  const navigation = useNavigation();
+
   const scale = useSharedValue(0);
 
   useEffect(() => {
@@ -37,7 +40,9 @@ const UpcomingShowItem = ({
 
   return (
     <Animated.View style={[styles.animatedCard, animatedStyle]}>
-      <ThemedCard cardContainerStyle={styles.cardContainerStyle}>
+      <ThemedCard
+        cardContainerStyle={styles.cardContainerStyle}
+        onPress={() => navigation.navigate('Detail')}>
         <ImageBackground source={item.image} style={styles.image}>
           <View style={styles.contentContainer}>
             <View style={styles.timeRow}>
@@ -80,7 +85,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: config.spacing[140],
+    height: config.spacing[180],
     borderRadius: config.spacing[10],
     overflow: 'hidden',
   },

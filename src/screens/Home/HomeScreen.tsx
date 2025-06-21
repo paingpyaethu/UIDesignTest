@@ -2,14 +2,15 @@ import React from 'react';
 import {View, ScrollView, StyleSheet} from 'react-native';
 import {colors, config} from '@/theme';
 import {HomeScreenItemWrapper} from '@/components/organisms';
+import {SafeScreen} from '@/components/template';
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
+    <SafeScreen>
       <ScrollView contentContainerStyle={styles.contentContainerStyle}>
         <HomeScreenItemWrapper />
       </ScrollView>
-    </View>
+    </SafeScreen>
   );
 };
 

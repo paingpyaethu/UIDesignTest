@@ -29,7 +29,7 @@ const UpcomingShows = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
-          paddingBottom: config.spacing[20],
+          paddingBottom: config.spacing[10],
           gap: config.spacing[10],
         }}
       />

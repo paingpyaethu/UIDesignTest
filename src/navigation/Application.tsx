@@ -4,8 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import {Paths} from '@/navigation/paths';
-import {DetailScreen, HomeScreen} from '@/screens';
+import BottomTabs from './BottomTabs/BottomTabs';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -14,8 +13,7 @@ const ApplicationNavigator = () => {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}}>
-          <Stack.Screen component={HomeScreen} name={Paths.Home} />
-          <Stack.Screen component={DetailScreen} name={Paths.Detail} />
+          <Stack.Screen name={'BottomTab'} component={BottomTabs} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

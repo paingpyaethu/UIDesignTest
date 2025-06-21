@@ -14,4 +14,7 @@ export enum Images {
   MEET_AND_GREETS = require('@/assets/images/categories/meet_and_greets.png'),
   TICKET = require('@/assets/images/tickets/ticket.png'),
   CLOCK = require('@/assets/images/tickets/clock.png'),
+  HOME = require('@/assets/images/bottomtab/home.png'),
+  WALLET = require('@/assets/images/bottomtab/wallet.png'),
+  MORE = require('@/assets/images/bottomtab/more.png'),
 }

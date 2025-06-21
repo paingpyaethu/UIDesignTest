@@ -1,11 +1,17 @@
 import type {StackScreenProps} from '@react-navigation/stack';
-import {Paths} from './paths';
+import {NavigatorScreenParams} from '@react-navigation/native';
+
+export type RootStackParamList = {
+  BottomTab: NavigatorScreenParams<BottomTabParamList>;
+  Detail: undefined;
+};
+
+export type BottomTabParamList = {
+  Home: undefined;
+  Wallet: undefined;
+  More: undefined;
+};
 
 export type RootScreenProps<
   S extends keyof RootStackParamList = keyof RootStackParamList,
 > = StackScreenProps<RootStackParamList, S>;
-
-export type RootStackParamList = {
-  [Paths.Home]: undefined;
-  [Paths.Detail]: undefined;
-};

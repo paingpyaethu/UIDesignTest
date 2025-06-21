@@ -1,4 +1,5 @@
 import {scaledSize} from '@/theme';
+import {Platform} from 'react-native';
 
 const scaled = (value: number) => {
   return {
@@ -7,4 +8,8 @@ const scaled = (value: number) => {
   };
 };
 
-export {scaled};
+const platformOS = Platform.OS;
+const isIOS = platformOS === 'ios';
+const isAndroid = platformOS === 'android';
+
+export {scaled, isAndroid, isIOS};

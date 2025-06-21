@@ -1,18 +1,19 @@
 import React from 'react';
-import {View, Image, ScrollView, StyleSheet} from 'react-native';
-import {Categories, Tickets, UpcomingShows} from '@/components/molecules';
-import {colors, config, Images} from '@/theme';
+import {View, ScrollView, StyleSheet} from 'react-native';
+import {
+  Categories,
+  ImageCarousel,
+  Tickets,
+  UpcomingShows,
+} from '@/components/molecules';
+import {colors, config} from '@/theme';
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.contentContainerStyle}>
         {/* Banner */}
-        <Image
-          source={Images.BANNER}
-          style={styles.banner}
-          resizeMode="cover"
-        />
+        <ImageCarousel />
 
         {/* Categories */}
         <Categories />
@@ -32,7 +33,7 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {flex: 1, backgroundColor: colors.white},
   contentContainerStyle: {
-    padding: config.spacing[16],
+    paddingVertical: config.spacing[16],
   },
   banner: {
     width: '100%',

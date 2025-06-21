@@ -26,17 +26,9 @@ const Tickets = () => {
 export default Tickets;
 
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: colors.white},
-  contentContainerStyle: {
-    padding: config.spacing[16],
-  },
-  banner: {
-    width: '100%',
-    height: config.spacing[200],
-    borderRadius: config.spacing[10],
-  },
   ticketsRowContainer: {
     flexDirection: 'row',
+    paddingHorizontal: config.spacing[16],
     gap: config.spacing[16],
   },
 });

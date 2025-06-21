@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'center',
     marginVertical: config.spacing[18],
+    paddingHorizontal: config.spacing[16],
   },
   categoryItem: {
     width: '24%',

@@ -1,6 +1,8 @@
 export enum Images {
   LOGO = require('@/assets/images/logo.png'),
-  BANNER = require('@/assets/images/banner.png'),
+  BANNER = require('@/assets/images/banner/banner.png'),
+  BANNERONE = require('@/assets/images/banner/banner_one.png'),
+  BANNERTWO = require('@/assets/images/banner/banner_two.png'),
   SHOW1 = require('@/assets/images/show1.png'),
   SHOW2 = require('@/assets/images/show2.png'),
   SHOWTIME = require('@/assets/images/show_time.png'),

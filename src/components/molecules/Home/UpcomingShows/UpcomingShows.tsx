@@ -27,7 +27,6 @@ const UpcomingShows = () => {
         contentContainerStyle={{
           paddingBottom: config.spacing[20],
           gap: config.spacing[10],
-          // paddingLeft: config.spacing[10],
         }}
       />
     </View>
@@ -39,6 +38,7 @@ export default UpcomingShows;
 const styles = StyleSheet.create({
   container: {
     paddingTop: config.spacing[24],
+    paddingHorizontal: config.spacing[16],
   },
   sectionHeader: {
     flexDirection: 'row',

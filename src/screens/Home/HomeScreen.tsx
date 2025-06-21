@@ -1,28 +1,13 @@
 import React from 'react';
 import {View, ScrollView, StyleSheet} from 'react-native';
-import {
-  Categories,
-  ImageCarousel,
-  Tickets,
-  UpcomingShows,
-} from '@/components/molecules';
 import {colors, config} from '@/theme';
+import {HomeScreenItemWrapper} from '@/components/organisms';
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.contentContainerStyle}>
-        {/* Banner */}
-        <ImageCarousel />
-
-        {/* Categories */}
-        <Categories />
-
-        {/* Tickets Section */}
-        <Tickets />
-
-        {/* Upcoming Shows Section */}
-        <UpcomingShows />
+        <HomeScreenItemWrapper />
       </ScrollView>
     </View>
   );

@@ -1,24 +1,14 @@
 import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
-import {ThemedText} from '@/components/atoms';
+import {View, StyleSheet} from 'react-native';
 import {categories} from '@/constants/dummy';
 import {colors, config} from '@/theme';
-import {scaled} from '@/utils/helper';
+import AnimatedCategoryItem from './AnimatedCategoryItem/AnimatedCategoryItem';
 
 const Categories = () => {
   return (
     <View style={styles.container}>
       {categories.map((item, index) => (
-        <View key={index} style={styles.categoryItem}>
-          <View style={styles.categoryImageContainer}>
-            <Image
-              source={item.image}
-              style={{...scaled(24)}}
-              resizeMode="contain"
-            />
-          </View>
-          <ThemedText>{item.label}</ThemedText>
-        </View>
+        <AnimatedCategoryItem key={index} item={item} index={index} />
       ))}
     </View>
   );

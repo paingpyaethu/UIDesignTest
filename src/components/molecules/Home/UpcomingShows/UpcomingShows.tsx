@@ -6,9 +6,13 @@ import {upcomingShows} from '@/constants/dummy';
 import {config} from '@/theme';
 
 const UpcomingShows = () => {
-  const renderItem = ({item}: {item: (typeof upcomingShows)[0]}) => (
-    <UpcomingShowItem item={item} />
-  );
+  const renderItem = ({
+    item,
+    index,
+  }: {
+    item: (typeof upcomingShows)[0];
+    index: number;
+  }) => <UpcomingShowItem item={item} index={index} />;
 
   return (
     <View style={styles.container}>

@@ -9,6 +9,7 @@ import {BANNER_IMAGES} from '@/constants/dummy';
 import {carouselRenderItem} from '@/utils/carousel-render-item';
 import {colors, config} from '@/theme';
 import {scaled} from '@/utils/helper';
+import {AnimatedListItemView} from '@/components/atoms';
 
 const {width} = Dimensions.get('window');
 
@@ -23,7 +24,7 @@ const ImageCarousel = () => {
   const ref = React.useRef<ICarouselInstance>(null);
 
   return (
-    <View>
+    <AnimatedListItemView>
       <Carousel
         ref={ref}
         {...baseOptions}
@@ -56,7 +57,7 @@ const ImageCarousel = () => {
         }}
         horizontal
       />
-    </View>
+    </AnimatedListItemView>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {colors, config, Images} from '@/theme';
+import {config, Images} from '@/theme';
 import TicketCard from './TicketCard/TicketCard';
 
 const Tickets = () => {

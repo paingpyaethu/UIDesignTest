@@ -1,1 +1,2 @@
-export {default as Categories} from './Categories/Categories';
+export {default as Categories} from './Home/Categories/Categories';
+export {default as Tickets} from './Home/Tickets/Tickets';

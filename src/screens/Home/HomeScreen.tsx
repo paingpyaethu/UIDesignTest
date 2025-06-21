@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet} from 'react-native';
 import {colors, config} from '@/theme';
 import {HomeScreenItemWrapper} from '@/components/organisms';
 import {SafeScreen} from '@/components/template';
